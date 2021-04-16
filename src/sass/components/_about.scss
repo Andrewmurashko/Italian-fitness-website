@@ -1,0 +1,23 @@
+.about__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.about {
+  margin-bottom: 70px;
+  
+  &__img {
+    margin-right: 56px;
+  }
+
+  &__title {
+    color: $color-dark-xxl;
+  }
+
+  &__content {
+    color: $color-dark-l;
+    font-size: 20px;
+    letter-spacing: 0.03em;
+    width: auto;
+  }
+}

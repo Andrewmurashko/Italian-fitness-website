@@ -1,0 +1,65 @@
+.courses__card {
+  width: 370px;
+}
+
+.card-option {
+  height: 122px;
+  position: relative;
+  background-color: $bg-card-s;
+
+  &_light {
+    background-color: $bg-card-s;
+  }
+
+  &_efficace {
+    background-color: $bg-card-l;
+  }
+
+  &_premium {
+    background-color: $bg-card-xl;
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: 900;
+    position: absolute;
+    left: 39px;
+  }
+
+  &__tag {
+    position: absolute;
+    top: 36px;
+    right: 0;
+    text-align: center;
+    font-size: 18px;
+    line-height: 22px;
+    padding: 6px 21px 8px 23px;
+    // width: 77px;
+    // height: 22px;
+    border-radius: 16px 0px 0px 16px;
+    background-color: $color-dark-xxl;
+    color: $color-light-xl;
+  }
+}
+
+.card-content {
+//   background-image: url('../../assets/img/PHOTO-2021-04-06-17-12-25_5 1.png');
+  //   background-size: cover;
+  height: 85%;
+  overflow: hidden;
+  padding: 24px 24px 23px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  &__text {
+    font-size: 16px;
+  }
+}
+
+.cost-block {
+  &__value {
+    font-size: 36px;
+    font-weight: 900;
+    margin-bottom: 23px;
+  }
+}

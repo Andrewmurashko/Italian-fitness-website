@@ -1,0 +1,14 @@
+.results__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 42px;
+}
+
+.results {
+  background-color: $color-primary-light;
+}
+
+.results-title {
+  margin-bottom: 52px;
+}

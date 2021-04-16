@@ -1,0 +1,26 @@
+//abstract
+@import './abstract/constants';
+@import './abstract/mixins';
+@import './abstract/placeholders';
+
+// layouts
+@import './layouts/header';
+@import './layouts/wrapper';
+@import './layouts/footer';
+
+//base
+@import './base/base';
+@import './base/buttons';
+@import './base/modal';
+
+//components
+@import './components/logo';
+@import './components/nav';
+@import './components/bikini';
+@import './components/courses';
+
+@import './components/Card';
+@import './components/courses-description';
+@import './components/about';
+@import './components/results';
+@import './components/Slider';

@@ -1,0 +1,34 @@
+.navigation {
+  @include media-mobile {
+    display: none;
+  }
+}
+.navigation__list {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+
+  list-style-type: none;
+  > * {
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.navigation__item {
+  margin: 0 18px;
+  cursor: pointer;
+  border-bottom: solid 3px transparent;
+  transition: 0.3s;
+  &:hover {
+    border-bottom: solid 3px black;
+  }
+  &_selected {
+    border-bottom: solid 3px black;
+    border-color: $color-primary;
+    color: $color-light-s;
+    pointer-events: none;
+  }
+}

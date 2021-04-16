@@ -1,0 +1,50 @@
+.button {
+  width: 271px;
+  height: 61px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px 0px;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 28.8px;
+  outline: none;
+  letter-spacing: 0.03em;
+  transition: 0.3s;
+  box-sizing: border-box;
+  border: solid 0px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color-primary;
+  }
+
+  &__attantion {
+    background-color: $color-attantion;
+    color: $color-light-xl;
+    &:hover {
+      background-color: $color-warning;
+    }
+  }
+
+  &__warning {
+    background-color: $color-warning;
+    color: $color-light-xl;
+    &:hover {
+      background-color: $color-attantion;
+    }
+  }
+
+  &__bordered {
+    width: 322px;
+    height: 61px;
+    border: solid 1px $color-warning;
+    color: $color-warning;
+    background-color: $bg-ligth-xl;
+    &:hover {
+      background-color: $color-warning;
+      color: $color-light-s;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.courses__wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.courses {
+  background-color: $color-primary-light-s;
+  margin-bottom: 90px;
+
+  &__decription-block {
+    width: 836px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 67px;
+  }
+
+  &__text {
+    text-align: center;
+  }
+
+  &__price-block {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
