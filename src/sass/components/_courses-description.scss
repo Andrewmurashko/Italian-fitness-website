@@ -5,8 +5,10 @@
   margin-bottom: 70px;
 
   &__title {
-    
     margin-bottom: 60px;
+    @include media-mobile {
+        margin-bottom: 24px;
+    }
   }
 
   &__content-block {

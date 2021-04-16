@@ -1,8 +1,6 @@
 import React from 'react';
-import moduleName from '../assets/img/2.png';
 
 function CourseCard({ onClickAccept, data }) {
-  //   const { id, name, isRecommended, optionContent, cost } = element;
   console.log(data);
   console.log(data.id);
   return (

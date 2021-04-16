@@ -1,5 +1,8 @@
 .courses__card {
   width: 370px;
+  @include media-mobile {
+    margin-bottom: 15px;
+}
 }
 
 .card-option {
@@ -45,7 +48,7 @@
 .card-content {
 //   background-image: url('../../assets/img/PHOTO-2021-04-06-17-12-25_5 1.png');
   //   background-size: cover;
-  height: 85%;
+  height: 82.5%;
   overflow: hidden;
   padding: 24px 24px 23px;
   display: flex;
@@ -54,6 +57,9 @@
   &__text {
     font-size: 16px;
   }
+  @include media-mobile {
+    height: auto;
+}
 }
 
 .cost-block {
@@ -63,3 +69,4 @@
     margin-bottom: 23px;
   }
 }
+

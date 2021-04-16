@@ -1,13 +1,19 @@
 .about__wrapper {
   display: flex;
   align-items: center;
+  @include media-mobile {
+    flex-wrap: wrap;
+  }
 }
 
 .about {
   margin-bottom: 70px;
-  
+
   &__img {
     margin-right: 56px;
+    @include media-mobile {
+        margin-bottom: 24px;
+      }
   }
 
   &__title {

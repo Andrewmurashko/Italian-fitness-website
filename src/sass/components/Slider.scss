@@ -1,10 +1,15 @@
 .slider {
-  width: 1170px;
+  width: 95%;
 }
 
 .slide {
   display: flex;
   padding: 50px 54px 59px;
+  @include media-mobile {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+  }
 
   &__photo-block {
     display: flex;
@@ -29,6 +34,15 @@
 .awssld__wrapper {
   box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.1);
   margin-bottom: 42px;
+  @include media-mobile {
+    overflow: unset !important;
+  }
+}
+
+.awssld__content {
+  @include media-mobile {
+    overflow: unset !important;
+  }
 }
 
 .awssld__prev {
@@ -54,5 +68,5 @@
 }
 
 .awssld__bullets button {
-    margin-right: 20px !important;
+  margin-right: 20px !important;
 }

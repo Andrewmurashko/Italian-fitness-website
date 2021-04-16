@@ -37,6 +37,10 @@
     width: 675px;
     display: flex;
     position: relative;
+    @include media-mobile {
+        width: 339px;
+        margin-bottom: 18px;
+    }
   }
 
   &__mini-photos {
@@ -49,4 +53,10 @@
       height: 50%;
     }
   }
+}
+
+.first-photo{
+    @include media-mobile {
+        width: 240px;
+    }
 }

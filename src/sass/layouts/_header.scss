@@ -7,5 +7,30 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 15px;
-  padding-bottom: 15px ;
+  padding-bottom: 15px;
+}
+
+.hamburger {
+  display: none;
+  position: relative;
+  width: 35px;
+  height: 30px;
+  @include media-mobile {
+    display: inline-block;
+  }
+  &:before {
+    @extend %hamburger-line;
+    top: 0x;
+    right: 25px;
+  }
+  &:after {
+    @extend %hamburger-line;
+    bottom: 0px;
+    right: 25px;
+  }
+}
+.hamburger__line {
+  @extend %hamburger-line;
+  top: calc(50% - 1px);
+  right: 25px;
 }
