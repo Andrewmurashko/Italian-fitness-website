@@ -13,12 +13,15 @@ const courseOptionsArray = [
       return (
         <>
           <p>Test-Drive</p>
-          <p>Contiene 4 settimane 3 allenamenti a settimana:</p>
-          <ul className="unmarked">
-            <li>- parte alta </li>
-            <li>- ambe e glutei </li>
-            <li>- total body</li>
-          </ul>
+          <p>
+            Contiene 4 settimane 3 allenamenti a settimana:
+            <ul className="unmarked">
+              <li>- parte alta </li>
+              <li>- ambe e glutei </li>
+              <li>- total body</li>
+            </ul>
+          </p>
+
           <p>Duratura 20 min ciascuno</p>
         </>
       );
@@ -65,14 +68,15 @@ const courseOptionsArray = [
           </p>
           <ul className="unmarked">
             <li>
-              ⁃ Workbook <br />
-              È il tuo libretto sotto mano di Fitness con dei varie contenuti utili.
+              ⁃ Workbook <br />È il tuo libretto sotto mano di Fitness con dei varie contenuti
+              utili.
             </li>
             <p></p>
             <li>
-              ⁃ Live chat con me e partecipanti<br />
-                *potresti farmi qualsiasi tipo di domanda, condividere il tuo progresso o eventuali
-                difficoltà, stiamo connessi{' '}
+              ⁃ Live chat con me e partecipanti
+              <br />
+              *potresti farmi qualsiasi tipo di domanda, condividere il tuo progresso o eventuali
+              difficoltà, stiamo connessi{' '}
             </li>
           </ul>
           <p>

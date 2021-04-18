@@ -5,4 +5,7 @@
     font-size: 18px;
     text-align: center;
   }
+  @include media-mobile {
+    margin-top: 40px;
+  }
 }

@@ -11,6 +11,9 @@ h1 {
   font-weight: 900;
   font-size: 64px;
   line-height: 76.8px;
+  @include media-mobile {
+    font-size: 60px;
+  }
 }
 
 h2 {
@@ -67,6 +70,9 @@ li {
   color: $color-dark-l;
   font-size: 20px;
   letter-spacing: 0.05em;
+  @include media-mobile {
+    font-size: 15px;
+}
 }
 
 .unmarked {

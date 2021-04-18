@@ -7,6 +7,15 @@
   padding: 100px 0 138px;
   background-color: $color-primary-light;
 
+  &__content {
+    @include media-mobile {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
   &__title {
     margin-bottom: 30px;
     color: $color-primary-contrast;
@@ -38,8 +47,9 @@
     display: flex;
     position: relative;
     @include media-mobile {
-        width: 339px;
-        margin-bottom: 18px;
+      width: 339px;
+      margin-bottom: 18px;
+      margin-left: 15px;
     }
   }
 
@@ -55,8 +65,8 @@
   }
 }
 
-.first-photo{
-    @include media-mobile {
-        width: 240px;
-    }
+.first-photo {
+  @include media-mobile {
+    width: 240px;
+  }
 }

@@ -3,6 +3,9 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  @include media-mobile {
+    max-width: 375px;
+  }
 }
 
 .courses {

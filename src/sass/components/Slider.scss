@@ -5,10 +5,20 @@
 .slide {
   display: flex;
   padding: 50px 54px 59px;
+  &__description {
+    @include media-mobile {
+      width: 90%;
+}
+  }
   @include media-mobile {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     height: 100%;
+    &>*{
+      font-size: 14px;
+
+    }
   }
 
   &__photo-block {
@@ -16,12 +26,18 @@
     flex-direction: column;
     align-items: center;
     margin-right: 51px;
+      @include media-mobile {
+        margin-right: 0;
+  }
   }
 }
 
 .photo-block {
   &__img {
     margin-bottom: 25px;
+    @include media-mobile {
+      width: 320px;
+}
   }
 
   &__subtitle {
@@ -31,17 +47,22 @@
   }
 }
 
+.awssld {
+  @include media-mobile {
+  height: 1000px;
+  }
+}
 .awssld__wrapper {
   box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.1);
   margin-bottom: 42px;
   @include media-mobile {
-    overflow: unset !important;
+    margin-bottom: 0;
   }
 }
 
 .awssld__content {
   @include media-mobile {
-    overflow: unset !important;
+    // overflow: unset !important;
   }
 }
 
@@ -61,6 +82,10 @@
   position: static !important;
   --control-bullet-color: #ffc895;
   margin: 5px 20px 45px 0;
+  @include media-mobile {
+    margin-bottom: 0;
+  }
+  
 }
 
 .awssld__bullets--active {
