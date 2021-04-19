@@ -40,7 +40,7 @@ function App() {
         <div className="wrapper bikini__wrapper">
           <div className="bikini__content">
             <h1 className="bikini__title">Bikini Body</h1>
-            {width < 376 && (
+            {width < 600 && (
               <div className="bikini__photos">
                 <img className="first-photo" src={firstPhoto} alt="" />
                 <div className="bikini__mini-photos">
@@ -68,7 +68,7 @@ function App() {
             </div>
             <button className="button button__warning">TEST DRIVE</button>
           </div>
-          {width >= 376 && (
+          {width >= 600 && (
             <div className="bikini__photos">
               <img className="first-photo" src={firstPhoto} alt="" />
               <div className="bikini__mini-photos">
